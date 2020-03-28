@@ -1,0 +1,164 @@
+
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%); /*text color */
+    --light-blue: hsl(246, 25%, 77%); /*footer colour */
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--red);
+    background-image: url(./images/bg-intro-desktop.png);
+    
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+
+}
+
+.main {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height:90vh
+}    
+
+
+
+.main > div {
+    padding: 3vw;
+    width: 50%;
+    max-width: 31rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.content {
+    color: white;
+}
+
+.container-form > * {
+    box-shadow: 0 0.4rem #00000024;
+}
+
+.banner-tryfree {
+    background-color: var(--blue);
+    color:white;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center; 
+}
+
+.banner-tryfree span{
+    font-weight:400;
+}
+
+.form {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.container-form * {
+    margin-bottom: 1rem;
+    border-radius: 0.4rem;
+}
+
+.form input {
+    height: 2rem;
+    border: 0.15rem solid var(--light-blue);
+    padding: 0.5em 2em;
+    transition: all 0.25s ease;
+}
+.form input:focus {
+    border-color: var(--blue);
+}
+
+.form input:hover{
+    border-color: var(--blue);
+}
+
+.form button {
+    background-color: var(--green);
+    border: none;
+    padding: 1em;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 0.05em;
+    box-shadow: 0 0.3em hsl(154.1, 56.4%, 45.9%);
+    transition: all .25s ease;
+}
+
+.form button:hover{
+    cursor: pointer;
+    box-shadow: 0 0.5em hsl(154.1, 56.4%, 45.9%);
+}
+
+.form button:active {
+    box-shadow: none;
+}
+
+.form p {
+    text-align: center;
+    color: var(--light-blue);
+    font-size: 0.7rem;
+}
+
+.form p a {
+    color: var(--red);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .main {
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+    .main > div {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .content {
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
